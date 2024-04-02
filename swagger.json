@@ -1,0 +1,50 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "HTML Endpoint API",
+      "description": "API for retrieving HTML content"
+    },
+    "basePath": "/",
+    "produces": [
+      "text/html"
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "Get HTML content",
+          "description": "Retrieve HTML content from the server",
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "schema": {
+                "type": "string",
+                "example": "<html><head><title>Hello</title></head><body><h1>Hello, World!</h1></body></html>"
+              }
+            },
+            "404": {
+              "description": "Not found"
+            }
+          }
+        }
+      },
+      "/other": {
+        "get": {
+          "summary": "Get HTML content",
+          "description": "Retrieve HTML content from the server",
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "schema": {
+                "type": "string",
+                "example": "<html><head><title>Hello</title></head><body><h1>Hello, World!</h1></body></html>"
+              }
+            },
+            "404": {
+              "description": "Not found"
+            }
+          }
+        }
+      }
+    }
+  }
